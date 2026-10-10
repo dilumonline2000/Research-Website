@@ -369,13 +369,14 @@ a.card:hover { transform: translateY(-4px); border-color: var(--accent); }
 
 /* ---------- Feedback / photo cards ---------- */
 .feedback { display: grid; grid-template-columns: .8fr 1.2fr; gap: 20px; }
-.fb-card { position: relative; margin: 0; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); min-height: 380px; background: var(--bg-3); }
-.fb-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease); position: absolute; inset: 0; }
-.fb-card:hover img { transform: scale(1.05); }
-.fb-card figcaption { position: absolute; left: 14px; right: 14px; bottom: 14px; background: rgba(9,13,24,.8); color: #e8ecf5; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,.14); border-radius: 12px; padding: 16px 18px; }
-.fb-card blockquote { margin: 0 0 8px; font-family: var(--display); font-weight: 600; font-size: 17px; line-height: 1.4; }
-.fb-card .who { font-size: 12.5px; color: #a7b1c6; }
-.fb-card .who b { color: #3ddc97; font-weight: 500; }
+.fb-card { position: relative; margin: 0; display: flex; flex-direction: column; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); min-height: 380px; background: var(--surface); box-shadow: var(--card-shadow); transition: border-color .3s, transform .45s var(--ease); }
+.fb-card:hover { border-color: var(--line-2); transform: translateY(-4px); }
+.fb-card img { flex: 1 1 0; width: 100%; min-height: 220px; object-fit: cover; background: var(--bg-3); }
+.fb-card figcaption { flex: none; padding: 16px 20px 18px; border-top: 1px solid var(--line); background: var(--surface); }
+.fb-card blockquote { margin: 0 0 6px; font-family: var(--display); font-weight: 600; font-size: 16.5px; line-height: 1.45; color: var(--text); }
+.fb-card blockquote:last-child { margin-bottom: 0; }
+.fb-card .who { font-size: 13px; color: var(--muted); }
+.fb-card .who b { color: var(--m1); font-weight: 500; }
 
 /* ---------- Page header (sub pages) ---------- */
 .page-head { position: relative; padding: clamp(56px, 8vw, 96px) 0 clamp(40px, 6vw, 64px); overflow: hidden; border-bottom: 1px solid var(--line); }
@@ -694,7 +695,8 @@ a.info:hover { border-color: var(--accent); }
   .photo-stack { height: 330px; }
   .photo-stack figure:nth-child(1), .photo-stack figure:nth-child(3) { height: 280px; }
   .photo-stack figure:nth-child(2) { height: 300px; }
-  .fb-card { min-height: 420px; }
+  .fb-card { min-height: 0 !important; }
+  .fb-card img { flex: none; height: auto; min-height: 0; object-fit: contain; }
 }
 
 @media (prefers-reduced-motion: reduce) {
