@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Researchly AI — AI-Powered Research Assistant & Collaboration Platform</title>
+<meta name="description" content="Researchly AI (R26-IT-116, SLIIT): an integrated AI research assistant combining citation support, supervisor matching, document analysis and research analytics, grounded in SLIIT's own research corpus.">
+<meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#090d18" media="(prefers-color-scheme: dark)">
+<script>try{var t=localStorage.getItem("researchly-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<meta property="og:title" content="Researchly AI — AI-Powered Research Assistant & Collaboration Platform">
+<meta property="og:description" content="Researchly AI (R26-IT-116, SLIIT): an integrated AI research assistant combining citation support, supervisor matching, document analysis and research analytics, grounded in SLIIT's own research corpus.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"></div>
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Main">
+    <a class="brand" href="index.html" aria-label="Researchly AI home"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+  <defs><linearGradient id="rg-h" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#9333ea"/></linearGradient></defs>
+  <rect width="40" height="40" rx="10" fill="url(#rg-h)"/>
+  <path d="M14 29V11h7.2c3.9 0 6.3 2.1 6.3 5.4 0 2.5-1.4 4.3-3.8 5L28.4 29h-4.3l-4-7.2h-2.3V29zm3.8-10.4h3.1c1.9 0 2.9-.8 2.9-2.3s-1-2.3-2.9-2.3h-3.1z" fill="#fff"/>
+</svg><span class="brand-text">Researchly <span class="ai">AI</span><small>R26-IT-116 · SLIIT</small></span></a>
+    <ul class="nav-links" id="nav-links"><li><a href="index.html" aria-current="page">Home</a></li><li><a href="domain.html">Domain</a></li><li><a href="milestones.html">Milestones</a></li><li><a href="documents.html">Documents</a></li><li><a href="presentations.html">Presentations</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li></ul>
+    <div class="nav-tools">
+      <button class="icon-btn theme-btn" type="button" data-open-finder aria-label="Search this site (Ctrl + K)" title="Search (Ctrl + K)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      <button class="icon-btn theme-btn" type="button" data-theme-toggle aria-label="Switch between light and dark mode" title="Light / dark mode"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      <a class="icon-btn live-btn" href="https://researchly-ai.vercel.app/" target="_blank" rel="noopener">Live platform <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </nav>
+</header>
+<main id="main">
+<!-- ================= HERO ================= -->
+<section class="hero" aria-labelledby="hero-title">
+  <svg class="hero-graph" aria-hidden="true"></svg>
+  <div class="wrap hero-grid">
+    <div>
+      <a class="badge" href="#achievement"><b>SELECTED</b> ICDMIS 2026 · 3rd Int'l Conference on Data Mining &amp; Information Security</a>
+      <h1 id="hero-title"><span class="line"><span>AI-Powered Research Assistant</span></span><span class="line"><span><em>&amp; Collaboration Platform</em></span></span></h1>
+      <p class="lead">Researchly AI supports university students from topic selection to proposal submission. It brings citation support, supervisor matching, document analysis and research analytics together in one platform, built on SLIIT's own corpus of 4,219 research records.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="https://researchly-ai.vercel.app/" target="_blank" rel="noopener">Launch live platform <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="#demo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4z"/></svg> Watch the demo</a>
+        <a class="btn btn-ghost" href="https://github.com/dilumonline2000/SLIIT-Research---Researchly-AI-project" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg> GitHub</a>
+      </div>
+    </div>
+    <aside class="hero-meta" aria-label="Project facts">
+      <dl>
+        <dt>Project</dt><dd>R26-IT-116</dd>
+        <dt>Status</dt><dd><span class="dot"></span>Deployed · Vercel + Railway</dd>
+        <dt>Degree</dt><dd>BSc (Hons) in Information Technology</dd>
+        <dt>Supervisor</dt><dd>Ms. Sanjeevi Chandrasiri</dd>
+        <dt>Co-supervisor</dt><dd>Ms. Ishara Weerathunga</dd>
+        <dt>Period</dt><dd>January – October 2026</dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<div class="wrap">
+  <div class="stats reveal">
+    <div class="stat"><div class="num"><span data-count="4219" data-sep>4,219</span></div><div class="lbl">SLIIT repository records embedded as the shared corpus</div></div>
+    <div class="stat"><div class="num"><span data-count="4">4</span></div><div class="lbl">Integrated AI modules behind one authenticated gateway</div></div>
+    <div class="stat"><div class="num"><span data-count="0.970">0.970</span></div><div class="lbl">F1-score of the fine-tuned SBERT supervisor matcher</div></div>
+    <div class="stat"><div class="num"><span data-count="52">52</span></div><div class="lbl">Live validation cases, signed off by the supervisor</div></div>
+  </div>
+</div>
+
+<!-- ================= ABSTRACT ================= -->
+<section class="section" id="abstract" aria-labelledby="abstract-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow"><span class="sec">§ 01</span> Abstract</span>
+      <h2 class="h2" id="abstract-title">One platform, <em>four</em> research problems.</h2>
+      <p class="lead">Students currently juggle a reference manager, a search engine, a similarity checker, a mind-mapping app and a departmental spreadsheet, and none of them share data. Researchly AI argues that integrating these tools is itself the contribution.</p>
+    </div>
+    <article class="paper reveal">
+      <span class="stamp">Selected · ICDMIS 2026</span>
+      <div class="paper-tag"><span>Research Paper · R26-IT-116</span><span>Dept. of Information Technology, SLIIT</span></div>
+      <h3>AI-Powered Research Paper Assistant and Collaboration Platform for University Students</h3>
+      <p class="authors">K D T Kariyawasam · S P U Gunathilake · N V Hewamanna · H W S S Jayasundara · Chandrasiri S. S. · L I E P Weerathunga</p>
+      <div class="cols">
+        <p>Undergraduate research is supported today by tools that were never designed to work together. Students format references in one application, search literature in a second, check similarity in a third, and are allocated supervisors through largely manual processes. The resulting fragmentation costs time, permits avoidable citation and integrity errors, and leaves institutions without a consolidated view of their own research output.</p>
+        <p>This paper presents the design and evaluation framework of an integrated, AI-powered research assistant and collaboration platform built from four modules behind a single interface. Module 1 provides citation generation in APA and IEEE styles, research gap analysis, retrieval-augmented proposal drafting and mind maps. Module 2 matches students to supervisors and peers using Sentence-BERT embeddings and a weighted multi-factor ranking, and classifies academic feedback. Module 3 performs multi-label topic categorisation, summarisation and plagiarism analysis. Module 4 forecasts emerging research domains and computes a four-dimensional weighted quality score. The platform contributes to SDG 4 and SDG 9.</p>
+      </div>
+      <p class="kw"><b>Keywords —</b> natural language processing, recommendation systems, research integrity, academic analytics, transformer models, higher education technology</p>
+    </article>
+  </div>
+</section>
+
+<div class="marquee" aria-label="Technologies used">
+  <div class="marquee-track">
+    <span>Next.js 14</span><span>TypeScript</span><span>Express.js gateway</span><span>FastAPI</span><span>Sentence-BERT</span><span>XGBoost</span><span>ARIMA · statsmodels</span><span>Supabase · pgvector</span><span>Gemini 2.5 Flash</span><span>CrossRef</span><span>Semantic Scholar</span><span>Docker</span><span>Vercel · Railway</span>
+    <span aria-hidden="true">Next.js 14</span><span aria-hidden="true">TypeScript</span><span aria-hidden="true">Express.js gateway</span><span aria-hidden="true">FastAPI</span><span aria-hidden="true">Sentence-BERT</span><span aria-hidden="true">XGBoost</span><span aria-hidden="true">ARIMA · statsmodels</span><span aria-hidden="true">Supabase · pgvector</span><span aria-hidden="true">Gemini 2.5 Flash</span><span aria-hidden="true">CrossRef</span><span aria-hidden="true">Semantic Scholar</span><span aria-hidden="true">Docker</span><span aria-hidden="true">Vercel · Railway</span>
+  </div>
+</div>
+
+<!-- ================= MODULES ================= -->
+<section class="section" id="modules" aria-labelledby="modules-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow"><span class="sec">§ 02</span> The four modules</span>
+      <h2 class="h2" id="modules-title">Four components, <em>one</em> shared corpus.</h2>
+      <p class="lead">Each module is an independent FastAPI service, but all of them read from the same embedded SLIIT corpus. A mind map can therefore show overlap data from Module 3, and Module 4 forecasts over the papers that Module 3 has categorised.</p>
+    </div>
+    <div class="modules">
+      <article class="module m1 reveal">
+        <div class="module-top"><span class="module-id">MODULE 01</span><svg class="module-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H2z"/><path d="M22 4h-7a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h8z"/></svg></div>
+        <h3>Research Integrity &amp; Compliance</h3>
+        <p>A deterministic APA/IEEE citation engine with CrossRef lookup, evidence-backed research-gap analysis over 553 author-stated gap sentences, retrieval-grounded proposal drafting over 3,858 SLIIT exemplars, and concept mind maps.</p>
+        <ul class="chips"><li>Citation parser</li><li>Gap analysis</li><li>Proposal RAG</li><li>Mind maps</li></ul>
+        <div class="owner"><img src="assets/images/team/kariyawasam.jpg" alt="" loading="lazy"><span><b>Kariyawasam K.D.T.</b> · IT22210524</span></div>
+      </article>
+      <article class="module m2 reveal" style="--d:.08s">
+        <div class="module-top"><span class="module-id">MODULE 02</span><svg class="module-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></div>
+        <h3>Collaboration &amp; Recommendation Engine</h3>
+        <p>A Sentence-BERT matcher fine-tuned with contrastive loss ranks 74 SLIIT supervisors by similarity and availability, and explains each ranking. It also covers peer research groups, OTP-verified ratings with aspect-level sentiment, and transparent effectiveness scoring.</p>
+        <ul class="chips"><li>Supervisor matching</li><li>Peer connect</li><li>Feedback sentiment</li></ul>
+        <div class="owner"><img src="assets/images/team/gunathilaka.jpg" alt="" loading="lazy"><span><b>Gunathilaka S.P.U.</b> · IT22055194</span></div>
+      </article>
+      <article class="module m3 reveal">
+        <div class="module-top"><span class="module-id">MODULE 03</span><svg class="module-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg></div>
+        <h3>Research Data Collection &amp; Management</h3>
+        <p>Builds the shared 4,219 × 384 SBERT corpus index and audits its quality. It provides multi-label topic categorisation, faithful extractive summarisation, plagiarism-trend analysis and pairwise comparison that combines SBERT similarity with 4-gram Jaccard overlap.</p>
+        <ul class="chips"><li>Corpus index</li><li>Categoriser</li><li>Summariser</li><li>Overlap analysis</li></ul>
+        <div class="owner"><img src="assets/images/team/hewamanne.jpg" alt="" loading="lazy"><span><b>Hewamanne N.V.</b> · IT22135902</span></div>
+      </article>
+      <article class="module m4 reveal" style="--d:.08s">
+        <div class="module-top"><span class="module-id">MODULE 04</span><svg class="module-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-7"/></svg></div>
+        <h3>Research Performance Analytics &amp; Visualization</h3>
+        <p>Per-topic ARIMA forecasts with 95% prediction intervals, a four-dimension quality score that blends XGBoost regressors with calibrated heuristics, and success prediction that gives early warning on research topics.</p>
+        <ul class="chips"><li>Trend forecasting</li><li>Quality scoring</li><li>Success prediction</li></ul>
+        <div class="owner"><img src="assets/images/team/jayasundara.jpg" alt="" loading="lazy"><span><b>Jayasundara H.W.S.S.</b> · IT22553096</span></div>
+      </article>
+    </div>
+
+    <div style="margin-top:56px" class="reveal">
+      <span class="eyebrow"><span class="sec">§ 02.1</span> A student's journey</span>
+      <div class="steps six" style="margin-top:22px">
+        <div class="step"><h3>Describe an idea</h3><p>The student enters a topic or a short proposal description.</p></div>
+        <div class="step"><h3>Match supervisors</h3><p>Module 2 ranks supervisors whose expertise fits and explains why.</p></div>
+        <div class="step"><h3>Find the gap</h3><p>Module 1 checks the topic against SLIIT gap statements, and Module 4 shows whether the area is growing.</p></div>
+        <div class="step"><h3>Draft &amp; cite</h3><p>Module 1 drafts a proposal grounded in similar SLIIT papers and formats its references.</p></div>
+        <div class="step"><h3>Check overlap</h3><p>Module 3 compares the draft with closely related papers.</p></div>
+        <div class="step"><h3>Score quality</h3><p>Module 4 scores proposal quality and success probability so problems are caught early.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ================= DEMO ================= -->
+<section class="section" id="demo" aria-labelledby="demo-title">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow"><span class="sec">§ 03</span> See it working</span>
+      <h2 class="h2" id="demo-title">A walkthrough of the <em>dashboard.</em></h2>
+      <p class="lead">A recorded demo of the deployed platform covering all four modules: citations and gap analysis, supervisor matching, document analysis and research analytics.</p>
+    </div>
+    <div class="video-wrap reveal">
+      <div class="window-bar"><i></i><i></i><i></i><span>researchly-ai.vercel.app — Dashboard demo</span></div>
+      <div class="video-frame">
+        <a class="video-facade" href="https://youtu.be/7BuNPmz995Q" target="_blank" rel="noopener" data-video="7BuNPmz995Q" aria-label="Play the Researchly AI dashboard demo video">
+          <img src="https://i.ytimg.com/vi/7BuNPmz995Q/maxresdefault.jpg" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/7BuNPmz995Q/hqdefault.jpg'">
+          <span class="play-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4z"/></svg></span>
+          <span class="video-cap">Watch the demo · Researchly AI dashboard</span>
+        </a>
+      </div>
+    </div>
+    <div class="grid-3" style="margin-top:20px">
+      <a class="card reveal" href="https://researchly-ai.vercel.app/" target="_blank" rel="noopener"><span class="k">TRY IT</span><h3>Live platform ↗</h3><p>researchly-ai.vercel.app: the production front end on Vercel, with the gateway and ML services on Railway.</p></a>
+      <a class="card reveal" style="--d:.06s" href="https://github.com/dilumonline2000/SLIIT-Research---Researchly-AI-project" target="_blank" rel="noopener"><span class="k">SOURCE</span><h3>GitHub repository ↗</h3><p>A monorepo with the Next.js web app, Express gateway, four FastAPI services, ML notebooks and Supabase migrations.</p></a>
+      <a class="card reveal" style="--d:.12s" href="https://youtu.be/7BuNPmz995Q" target="_blank" rel="noopener"><span class="k">WATCH</span><h3>Open on YouTube ↗</h3><p>Watch the full demo on YouTube in a new tab.</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ACHIEVEMENT ================= -->
+<section class="section-tight" id="achievement" aria-labelledby="ach-title">
+  <div class="wrap">
+    <div class="achievement reveal">
+      <div>
+        <svg class="trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg>
+        <span class="eyebrow"><span class="sec">§ 04</span> Conference achievement</span>
+        <h2 class="h2" id="ach-title">Selected for <em>ICDMIS 2026.</em></h2>
+        <p class="lead">Our research was selected for the <strong>3rd International Conference on Data Mining and Information Security (ICDMIS 2026)</strong>, held on 7–8 October 2026 in Colombo, Sri Lanka. The team presented it as a technical poster and received certificates of participation.</p>
+        <p style="color:var(--muted);font-size:14.5px">Organised by Eminent College of Management &amp; Technology (Kolkata, India) and the Sri Lanka Institute of Information Technology, with Springer Nature as publication partner, in association with IKRF.</p>
+        <div class="logo-row">
+          <span class="logo-tile"><img src="assets/images/logos/icdmis.png" alt="ICDMIS 2026" loading="lazy"></span>
+          <span class="logo-tile"><img src="assets/images/logos/sliit.png" alt="SLIIT" loading="lazy"></span>
+          <span class="logo-tile"><img src="assets/images/logos/eminent.png" alt="Eminent College of Management &amp; Technology" loading="lazy"></span>
+          <span class="logo-tile"><img src="assets/images/logos/springer.png" alt="" loading="lazy"><span class="sn">Springer<span>Nature</span></span></span>
+        </div>
+        <div style="margin-top:26px"><a class="btn btn-ghost btn-sm" href="about.html#achievements">View certificate &amp; photos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      </div>
+      <div class="photo-stack">
+        <figure><img src="assets/images/conference/certificates.jpg" alt="ICDMIS 2026 certificates of participation for the team" loading="lazy"></figure>
+        <figure><img src="assets/images/conference/banner.jpg" alt="ICDMIS 2026 conference banner, Colombo" loading="lazy"></figure>
+        <figure><img src="assets/images/conference/poster.jpg" alt="Team members presenting the Researchly AI technical poster" loading="lazy"></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEEDBACK ================= -->
+<section class="section" id="feedback" aria-labelledby="fb-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow"><span class="sec">§ 05</span> User feedback</span>
+      <h2 class="h2" id="fb-title">Tested with <em>real</em> students.</h2>
+      <p class="lead">During hands-on sessions at SLIIT, students used the deployed platform and gave feedback on its modules. That feedback shaped the interface and the validation priorities.</p>
+    </div>
+    <div class="feedback">
+      <figure class="fb-card reveal">
+        <img src="assets/images/feedback/session-1.jpg" alt="A student exploring the Researchly AI landing page on a laptop" loading="lazy">
+        <figcaption>
+          <blockquote>Exploring the landing page and the four integrated modules.</blockquote>
+          <div class="who"><b>●</b> User testing session · SLIIT · May 2026</div>
+        </figcaption>
+      </figure>
+      <figure class="fb-card reveal" style="--d:.08s">
+        <img src="assets/images/feedback/session-2.jpg" alt="Students reviewing trend forecast charts on the Researchly AI analytics dashboard" loading="lazy">
+        <figcaption>
+          <blockquote>Reviewing research-trend forecasts on the Module 4 analytics dashboard, with the team on hand to gather feedback.</blockquote>
+          <div class="who"><b>●</b> Group feedback session · SLIIT · May 2026</div>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="section-tight">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <h2>Read the research, browse the slides, or <em>talk to the team.</em></h2>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="documents.html">Documents <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="contact.html">Contact us</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+  <defs><linearGradient id="rg-f" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#9333ea"/></linearGradient></defs>
+  <rect width="40" height="40" rx="10" fill="url(#rg-f)"/>
+  <path d="M14 29V11h7.2c3.9 0 6.3 2.1 6.3 5.4 0 2.5-1.4 4.3-3.8 5L28.4 29h-4.3l-4-7.2h-2.3V29zm3.8-10.4h3.1c1.9 0 2.9-.8 2.9-2.3s-1-2.3-2.9-2.3h-3.1z" fill="#fff"/>
+</svg><span class="brand-text">Researchly <span class="ai">AI</span><small>R26-IT-116 · SLIIT</small></span></a>
+        <p style="margin-top:16px">An AI-powered research assistant and collaboration platform for university students — final-year research project, BSc (Hons) in Information Technology, Sri Lanka Institute of Information Technology.</p>
+      </div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="index.html">Home</a></li><li><a href="domain.html">Domain</a></li>
+        <li><a href="milestones.html">Milestones</a></li><li><a href="documents.html">Documents</a></li>
+      </ul></div>
+      <div><h4>Project</h4><ul>
+        <li><a href="presentations.html">Presentations</a></li><li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li><li><a href="about.html#achievements">Achievements</a></li>
+      </ul></div>
+      <div><h4>Resources</h4><ul>
+        <li><a href="https://researchly-ai.vercel.app/" target="_blank" rel="noopener">Live platform ↗</a></li>
+        <li><a href="https://github.com/dilumonline2000/SLIIT-Research---Researchly-AI-project" target="_blank" rel="noopener">GitHub repository ↗</a></li>
+        <li><a href="https://youtu.be/7BuNPmz995Q" target="_blank" rel="noopener">Demo video ↗</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1Wh-0akTEBXX2C-2BqsnoxqkH0JTby54T?usp=drive_link" target="_blank" rel="noopener">Google Drive ↗</a></li>
+      </ul></div>
+    </div>
+    <div class="foot-word" aria-hidden="true">Researchly <span>AI</span></div>
+    <div class="foot-bottom">
+      <span>© <span data-year>2026</span> Researchly AI · Group R26-IT-116 · Department of Information Technology, SLIIT</span>
+      <a class="to-top" href="#main">Back to top <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg></a>
+    </div>
+  </div>
+</footer>
+<div class="finder" role="dialog" aria-modal="true" aria-label="Search this site">
+  <div class="finder-box">
+    <div class="finder-input"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="text" placeholder="Search pages, sections and documents…" aria-label="Search"><kbd>Esc</kbd></div>
+    <ul class="finder-results"></ul>
+  </div>
+</div>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
