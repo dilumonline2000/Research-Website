@@ -165,7 +165,7 @@
     ["Achievements", "about.html#achievements", "About us"],
     ["Contact form", "contact.html#form", "Contact"],
     ["Phone, email & address", "contact.html#details", "Contact"],
-    ["GitHub repository", "https://github.com/dilumonline2000/SLIIT-Research---Researchly-AI-project", "External"],
+    ["GitHub repository", "https://github.com/dilumonline2000/R26-IT-116-Researchly-Ai-", "External"],
     ["Live platform — researchly-ai.vercel.app", "https://researchly-ai.vercel.app/", "External"],
     ["Google Drive — all documents", "https://drive.google.com/drive/folders/1Wh-0akTEBXX2C-2BqsnoxqkH0JTby54T?usp=drive_link", "External"]
   ];
